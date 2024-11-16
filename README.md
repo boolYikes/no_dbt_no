@@ -38,12 +38,15 @@
         - run `dbt test` for running all tests, or `dbt test --select dim_user_metadata`
     - also see dbt expectations extension (need to be added explicitly inside packages.yml)
 
-- cataloguing:
+- cataloguing... data governance
     - this might be a separate subject. related, but separate.
-    - see Atlan, MS Purview
+    - see Atlan, MS Purview etc
+    - on-premise/cloud-native -> orientations differ by governance tools
     - data assets:
         - table(db), dashboard, docs and messages(slack, Jira, github etc)
         - ml features, data pipeline, users(hr)
+    - the catch: learn to use data hub? seems like a niche
+    - the lecturer said: don't worry about the heavy load -> i say have it all muaha
 
 - documentation:
     - best practice: write inside the yml
