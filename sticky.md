@@ -24,8 +24,14 @@
     ![alt text](image.png)
     ![alt text](image-1.png)
     - Or take a look at this
-    ![alt text](image-2.png)
+    ![alt text](image-2.png)9
 - Experiment = AB Test synonym
+
+# core concepts
+- seeds: dimension tables are seeds which only has one column - dbt seeds
+- sources: aliases for schemas and tables. sources.yml0
+- snapshot: dbt uses SCD 2. If an entity's data changes from the dim table, make a new dim table for history/snapshot
+    - ex> an employee's job code changes from a to b -> new table : job code a is valid from x to y -> composite key emp id + valid from + to
 
 # Get started: now would be a good time - dbt core on local
 - install: `sudo pip install dbt-redshift` -> core module included
@@ -51,4 +57,3 @@
 - snapshot (as needed)
 - example:
     ![alt text](image-3.png)
-### see readme inside learn_dbt
